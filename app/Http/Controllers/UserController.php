@@ -134,4 +134,9 @@ class UserController extends Controller
             ], 500);
         }
     }
+    public function index(){
+      $user=User::all();
+      return response()->json($user);
+
+    }
 }
